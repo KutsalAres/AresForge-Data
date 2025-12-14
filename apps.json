@@ -4,21 +4,21 @@
       "name": "Arceus",
       "desc": "Son Model Gelişmiş Toolbox",
       "size": "25.53 MB",
-      "icon": "https://SITE/icons/arceus.png",
+      "icon": "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/icons/arceus.png",
       "category": "Toolbox"
     },
     {
       "name": "WDBAX",
       "desc": "Eski Teknoloji Toolbox",
       "size": "25 MB",
-      "icon": "https://SITE/icons/wdbax.png",
+      "icon": "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/icons/wdbax.png",
       "category": "Toolbox"
     },
     {
       "name": "MAM+",
       "desc": "MCPE Eklenti Yapma Aracı",
       "size": "82.88 MB",
-      "icon": "https://SITE/icons/mam.png",
+      "icon": "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/icons/mam.png",
       "category": "Tools For MCPE"
     }
   ]
