@@ -9,14 +9,6 @@
       "category": "Toolbox"
     },
     {
-      "name": "Test",
-      "desc": "MCPE Eklenti Yapm Aracı",
-      "size": "99 MB",
-      "downloadUrl": "https://github.com/KutsalAres/AresForge-Data/raw/refs/heads/main/apks/arceus.apk",
-      "icon": "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/icons/mam.png",
-      "category": "Tools For MCPE"
-    },
-    {
       "name": "WDBAX",
       "desc": "Eski Teknoloji Toolbox",
       "size": "25 MB",
