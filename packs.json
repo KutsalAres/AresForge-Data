@@ -1,46 +1,175 @@
-{
-  "packs": [
-    {
-      "name": "Faithful 32x",
-      "desc": "Yüksek kaliteli texture pack, vanilla hissi korur",
-      "icon": "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/icons/arceus.png",
-      "category": "Texture Packs",
-      "downloadUrl": "https://example.com/faithful32x.zip"
-    },
-    {
-      "name": "X-Ray Ultimate",
-      "desc": "Madencilik için x-ray texture",
-      "icon": "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/icons/arceus.png",
-      "category": "Texture Packs",
-      "downloadUrl": "https://example.com/xray_ultimate.zip"
-    },
-    {
-      "name": "X-Ray Ultimdate",
-      "desc": "Madencilidk için x-ray texture",
-      "icon": "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/icons/arceus.png",
-      "category": "Texture Packs",
-      "downloadUrl": "https://example.com/xray_ultimate.zip"
-    },
-    {
-      "name": "X-Ray Ultiddmate",
-      "desc": "Madencibglik için x-ray texture",
-      "icon": "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/icons/arceus.png",
-      "category": "Add-Ons",
-      "downloadUrl": "https://example.com/xray_ultimate.zip"
-    },
-    {
-      "name": "X-Ray Ultivsmate",
-      "desc": "Madencbnilik için x-ray texture",
-      "icon": "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/icons/arceus.png",
-      "category": "Add-Ons",
-      "downloadUrl": "https://example.com/xray_ultimate.zip"
-    },
-    {
-      "name": "X-Ray Ultihhmate",
-      "desc": "Madencilikaa için x-ray texture",
-      "icon": "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/icons/arceus.png",
-      "category": "Add-Ons",
-      "downloadUrl": "https://example.com/xray_ultimate.zip"
+package com.aresforge.store;
+
+import android.os.Bundle;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MainActivity extends AppCompatActivity {
+
+    RecyclerView recyclerApps;
+    RecyclerView recyclerPacks;
+    LinearLayout layoutDiscover;
+
+    @Override
+    protected void onCreate(Bundle b) {
+        super.onCreate(b);
+        setContentView(R.layout.activity_main);
+
+        recyclerApps = findViewById(R.id.recyclerApps);
+        recyclerPacks = findViewById(R.id.recyclerPacks);
+        layoutDiscover = findViewById(R.id.layoutDiscover);
+
+        recyclerApps.setLayoutManager(new LinearLayoutManager(this));
+
+        // Packs 2 sütun grid
+        recyclerPacks.setLayoutManager(new GridLayoutManager(this, 2));
+
+        BottomNavigationView bottomNavigation = findViewById(R.id.bottom_navigation);
+        bottomNavigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(MenuItem item) {
+                recyclerApps.setVisibility(View.GONE);
+                recyclerPacks.setVisibility(View.GONE);
+                layoutDiscover.setVisibility(View.GONE);
+
+                int itemId = item.getItemId();
+                if (itemId == R.id.nav_apps) {
+                    recyclerApps.setVisibility(View.VISIBLE);
+                    fetchApps();
+                } else if (itemId == R.id.nav_packs) {
+                    recyclerPacks.setVisibility(View.VISIBLE);
+                    fetchPacks();
+                } else if (itemId == R.id.nav_discover) {
+                    layoutDiscover.setVisibility(View.VISIBLE);
+                }
+                return true;
+            }
+        });
+
+        bottomNavigation.setSelectedItemId(R.id.nav_apps);
+        fetchApps();
     }
-  ]
+
+    private void fetchApps() {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    String json = NetworkUtils.get("https://raw.githubusercontent.com/KutsalAres/AresForge-Data/main/apps.json");
+                    JSONObject obj = new JSONObject(json);
+                    JSONArray arr = obj.getJSONArray("apps");
+
+                    final List<ListRow> rows = new ArrayList<>();
+                    rows.add(ListRow.header("Toolbox"));
+                    rows.add(ListRow.header("Tools For MCPE"));
+
+                    for (int i = 0; i < arr.length(); i++) {
+                        JSONObject a = arr.getJSONObject(i);
+                        AppItem item = new AppItem(
+                            a.getString("name"),
+                            a.getString("desc"),
+                            a.getString("size"),
+                            a.getString("icon"),
+                            a.getString("category"),
+                            a.getString("downloadUrl")
+                        );
+
+                        if (item.category.equals("Toolbox")) {
+                            rows.add(1, ListRow.app(item));
+                        } else {
+                            rows.add(ListRow.app(item));
+                        }
+                    }
+
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            recyclerApps.setAdapter(new AppAdapter(rows));
+                        }
+                    });
+
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        }).start();
+    }
+
+    private void fetchPacks() {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    String json = NetworkUtils.get("https://raw.githubusercontent.com/KutsalAres/AresForge-Data/main/packs.json");
+                    JSONObject obj = new JSONObject(json);
+                    JSONArray arr = obj.getJSONArray("packs");
+
+                    final List<ListRow> rows = new ArrayList<>();
+                    rows.add(ListRow.header("Add-Ons"));  // Tam istediğin gibi
+                    rows.add(ListRow.header("Texture Packs"));
+
+                    for (int i = 0; i < arr.length(); i++) {
+                        JSONObject a = arr.getJSONObject(i);
+                        PackItem item = new PackItem(
+                            a.getString("name"),
+                            a.getString("desc"),
+                            a.getString("icon"),
+                            a.getString("category"),
+                            a.getString("downloadUrl")
+                        );
+
+                        if (item.category.equals("Add-Ons")) {
+                            rows.add(1, ListRow.pack(item));
+                        } else {
+                            rows.add(ListRow.pack(item));
+                        }
+                    }
+
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            PackAdapter adapter = new PackAdapter(rows);
+                            recyclerPacks.setAdapter(adapter);
+
+                            // Header'lar full width olsun (2 span), item'lar 1 span
+                            GridLayoutManager glm = (GridLayoutManager) recyclerPacks.getLayoutManager();
+                            glm.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
+                                @Override
+                                public int getSpanSize(int position) {
+                                    if (rows.get(position).type == ListRow.TYPE_HEADER) {
+                                        return 2;  // Header tam genişlik
+                                    }
+                                    return 1;  // Pack item yarım genişlik (yan yana 2 tane)
+                                }
+                            });
+                        }
+                    });
+
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            Toast.makeText(MainActivity.this, "Packs yüklenemedi", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                }
+            }
+        }).start();
+    }
 }
