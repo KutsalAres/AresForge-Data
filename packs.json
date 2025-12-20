@@ -3,14 +3,14 @@
     {
       "name": "Faithful 32x",
       "desc": "Yüksek kaliteli texture pack, vanilla hissi korur",
-      "icon": "https://example.com/faithful_icon.png",  // Gerçek icon linki koy (aşağıda örnek linkler var)
+      "icon": "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/icons/arceus.png",
       "category": "Texture Packs",
       "downloadUrl": "https://example.com/faithful32x.zip"
     },
     {
       "name": "X-Ray Ultimate",
       "desc": "Madencilik için x-ray texture",
-      "icon": "https://example.com/xray_icon.png",
+      "icon": "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/icons/arceus.png",
       "category": "Texture Packs",
       "downloadUrl": "https://example.com/xray_ultimate.zip"
     }
