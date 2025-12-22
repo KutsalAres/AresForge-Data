@@ -11,7 +11,7 @@
       "version": "2.0.0",
       "updateDate": "21 Aralık 2025",
       "category": "Toolbox",
-      "about": "Oyyy\n Timur Yarrami Ye",
+      "about": "Oyyy\\nTimur Yarrami Ye",  <!-- \n yerine \\n yaptım -->
       "screenshots": [
         "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/screenshots/arceus/2.jpg",
         "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/screenshots/arceus/1.jpg"
