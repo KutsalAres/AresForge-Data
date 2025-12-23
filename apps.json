@@ -25,10 +25,10 @@
       "downloadUrl": "https://github.com/KutsalAres/AresForge-Data/raw/refs/heads/main/apks/arceus.apk",
       "icon": "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/icons/wdbax.png",
       "locked": false,
-      "new": true,
+      "new": false,
       "screenshotsOrientation": "horizontal",
       "version": "2.0.0",
-      "updateDate": "21 Aralık 2025",
+      "updateDate": "13 Haziran 2023",
       "category": "Toolbox",
       "screenshots": [
         "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/screenshots/arceus/2.jpg",
