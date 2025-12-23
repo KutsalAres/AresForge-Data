@@ -1,0 +1,19 @@
+{
+  "socials": [
+    {
+      "name": "Discord",
+      "icon": "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/main/icons/discord.png",
+      "link": "https://discord.gg/yourlink"
+    },
+    {
+      "name": "Telegram",
+      "icon": "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/main/icons/telegram.png",
+      "link": "https://t.me/yourlink"
+    },
+    {
+      "name": "Instagram",
+      "icon": "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/main/icons/instagram.png",
+      "link": "https://instagram.com/yourprofile"
+    }
+  ]
+}
