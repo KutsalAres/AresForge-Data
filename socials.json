@@ -2,17 +2,17 @@
   "socials": [
     {
       "name": "Discord",
-      "icon": "ic_discord",
+      "icon": "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/main/socials/ic_discord.png",
       "link": "https://discord.gg/nWXSp44Qyr"
     },
     {
       "name": "Tiktok",
-      "icon": "ic_tiktok",
+      "icon": "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/main/socials/ic_tiktok.png",
       "link": "https://www.tiktok.com/@kutsalares0?_r=1&_t=ZS-92TAxFohwMa"
     },
     {
       "name": "Youtube",
-      "icon": "ic_youtube",
+      "icon": "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/main/socials/ic_youtube.png",
       "link": "https://instagram.com/yourprofile"
     }
   ]
