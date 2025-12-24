@@ -6,6 +6,11 @@
       "link": "https://discord.gg/nWXSp44Qyr"
     },
     {
+      "name": "AresForge",
+      "icon": "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/main/socials/ic_forge.png",
+      "link": "https://sites.google.com/view/aresforge"
+    },
+    {
       "name": "Tiktok",
       "icon": "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/main/socials/ic_tiktok.png",
       "link": "https://www.tiktok.com/@kutsalares0?_r=1&_t=ZS-92TAxFohwMa"
@@ -13,7 +18,7 @@
     {
       "name": "Youtube",
       "icon": "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/main/socials/ic_youtube.png",
-      "link": "https://instagram.com/yourprofile"
+      "link": "https://youtube.com/@kutsalares?si=c7CTVWVoAy0C_m4l"
     }
   ]
 }
