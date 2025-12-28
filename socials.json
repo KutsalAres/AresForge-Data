@@ -19,6 +19,11 @@
       "name": "Youtube",
       "icon": "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/main/socials/ic_youtube.png",
       "link": "https://youtube.com/@kutsalares?si=c7CTVWVoAy0C_m4l"
+    },
+    {
+      "name": "Spotify",
+      "icon": "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/main/socials/ic_spotify.png",
+      "link": "https://open.spotify.com/user/31syww5rrv3f2camqductnkelmom"
     }
   ]
 }
