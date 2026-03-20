@@ -26,11 +26,12 @@
       "icon": "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/icons/nbt_editor.png",
       "locked": false,
       "new": true,
-      "screenshotsOrientation": "vertical",
+      "screenshotsOrientation": "horizontal",
       "version": "1.0.0",
       "updateDate": "20 Mart 2026",
       "category": "Tools For MCPE",
       "screenshots": [
+        "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/screenshots/nbt_editor/3.jpg",
         "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/screenshots/nbt_editor/2.jpg",
         "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/screenshots/nbt_editor/1.jpg"
       ]
