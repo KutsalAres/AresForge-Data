@@ -7,7 +7,7 @@
       "downloadUrl": "https://github.com/KutsalAres/AresForge-Data/raw/refs/heads/main/apks/arceus.apk",
       "icon": "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/icons/arceus.png",
       "locked": false,
-      "new": true,
+      "new": false,
       "version": "3.1.8",
       "screenshotsOrientation": "horizontal",
       "updateDate": "21 Aralık 2025",
@@ -19,10 +19,27 @@
       ]
     },
     {
+      "name": "NBT Editor",
+      "desc": "MCPE İçin NBT Editor",
+      "size": "3,20 MB",
+      "downloadUrl": "https://github.com/KutsalAres/AresForge-Data/raw/refs/heads/main/apks/nbt_editor.apk",
+      "icon": "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/icons/nbt_editor.png",
+      "locked": false,
+      "new": true,
+      "screenshotsOrientation": "vertical",
+      "version": "1.0.0",
+      "updateDate": "20 Mart 2026",
+      "category": "Tools For MCPE",
+      "screenshots": [
+        "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/screenshots/nbt_editor/2.jpg",
+        "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/screenshots/nbt_editor/1.jpg"
+      ]
+    },
+    {
       "name": "WDBAX",
       "desc": "Eski Teknoloji Toolbox",
       "size": "14 MB",
-      "downloadUrl": "https://github.com/KutsalAres/AresForge-Data/raw/refs/heads/main/apks/arceus.apk",
+      "downloadUrl": "https://github.com/KutsalAres/AresForge-Data/raw/refs/heads/main/apks/wdbax.apk",
       "icon": "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/icons/wdbax.png",
       "locked": false,
       "new": false,
@@ -31,8 +48,8 @@
       "updateDate": "13 Haziran 2023",
       "category": "Toolbox",
       "screenshots": [
-        "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/screenshots/arceus/2.jpg",
-        "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/screenshots/arceus/1.jpg"
+        "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/screenshots/wdbax/2.jpg",
+        "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/screenshots/wdbax/1.jpg"
       ]
     },
     {
