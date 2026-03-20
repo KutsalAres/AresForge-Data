@@ -1,45 +1,17 @@
 {
   "packs": [
     {
-      "name": "Faithful 32x",
-      "desc": "Yüksek kaliteli texture pack, vanilla hissi korur",
-      "icon": "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/icons/arceus.png",
-      "category": "Texture Packs",
+      "name": "Change NameTag",
+      "desc": "Changes the player's NameTag.",
+      "icon": "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/icons/nametag.png",
+      "category": "Add-Ons",
       "downloadUrl": "https://example.com/faithful32x.zip"
     },
     {
       "name": "X-Ray Ultimate",
-      "desc": "Madencilik için x-ray texture",
-      "icon": "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/icons/arceus.png",
+      "desc": "Ares's Collection Texture Pack",
+      "icon": "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/icons/ares.png",
       "category": "Texture Packs",
-      "downloadUrl": "https://example.com/xray_ultimate.zip"
-    },
-    {
-      "name": "X-Ray Ultimdate",
-      "desc": "Madencilidk için x-ray texture",
-      "icon": "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/icons/arceus.png",
-      "category": "Texture Packs",
-      "downloadUrl": "https://example.com/xray_ultimate.zip"
-    },
-    {
-      "name": "X-Ray Ultiddmate",
-      "desc": "Madencibglik için x-ray texture",
-      "icon": "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/icons/arceus.png",
-      "category": "Add-Ons",
-      "downloadUrl": "https://example.com/xray_ultimate.zip"
-    },
-    {
-      "name": "X-Ray Ultivsmate",
-      "desc": "Madencbnilik için x-ray texture",
-      "icon": "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/icons/arceus.png",
-      "category": "Add-Ons",
-      "downloadUrl": "https://example.com/xray_ultimate.zip"
-    },
-    {
-      "name": "X-Ray Ultihhmate",
-      "desc": "Madencilikaa için x-ray texture",
-      "icon": "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/icons/arceus.png",
-      "category": "Add-Ons",
       "downloadUrl": "https://example.com/xray_ultimate.zip"
     }
   ]
