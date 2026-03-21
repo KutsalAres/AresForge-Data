@@ -6,7 +6,7 @@
       "icon": "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/icons/nametag.png",
       "category": "Add-Ons",
       "downloadUrl": "https://example.com/changenametag.mcaddon",
-      "author": "KutsalAres",
+      "author": "Kutsal Ares",
       "version": "1.0.0",
       "about": "This plugin allows you or other players to change your player tag. To activate it, you must first give yourself an admin tag and type .rename in the chat.",
       "screenshots": [
