@@ -10,11 +10,10 @@
       "version": "1.0.0",
       "about": "This plugin allows you or other players to change your player tag. To activate it, you must first give yourself an admin tag and type .rename in the chat.",
       "screenshots": [
-        "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/screenshots/change_nametag/1.png",
-        "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/screenshots/change_nametag/2.png",
-        "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/screenshots/change_nametag/3.png",
-        "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/screenshots/change_nametag/4.png",
-        "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/screenshots/change_nametag/5.png"
+        "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/screenshots/change_nametag/1.jpg",
+        "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/screenshots/change_nametag/2.jpg",
+        "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/screenshots/change_nametag/3.jpg",
+        "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/screenshots/change_nametag/4.jpg"
       ],
       "screenshotsOrientation": "horizontal"
     },
