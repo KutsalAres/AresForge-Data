@@ -5,14 +5,38 @@
       "desc": "Changes the player's NameTag.",
       "icon": "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/icons/nametag.png",
       "category": "Add-Ons",
-      "downloadUrl": "https://example.com/faithful32x.zip"
+      "downloadUrl": "https://example.com/changenametag.mcaddon",
+      "author": "KutsalAres",
+      "version": "1.0.0",
+      "about": "This plugin allows you or other players to change your player tag. To activate it, you must first give yourself an admin tag and type .rename in the chat.",
+      "screenshots": [
+        "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/screenshots/change_nametag/1.png",
+        "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/screenshots/change_nametag/2.png",
+        "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/screenshots/change_nametag/3.png",
+        "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/screenshots/change_nametag/4.png",
+        "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/screenshots/change_nametag/5.png"
+      ],
+      "screenshotsOrientation": "horizontal"
     },
     {
-      "name": "X-Ray Ultimate",
+      "name": "Action's And Stuffs",
       "desc": "Ares's Collection Texture Pack",
       "icon": "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/icons/ares.png",
       "category": "Texture Packs",
-      "downloadUrl": "https://example.com/xray_ultimate.zip"
+      "downloadUrl": "https://example.com/xray_ultimate.mcpack",
+      "author": "KutsalAres",
+      "version": "1.0.0",
+      "updateDate": "21 Ara 2025",
+      "size": "5 MB",
+      "about": "Ares'in özel koleksiyon texture pack'i.",
+      "screenshots": [
+        "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/screenshots/xray_ultimate/1.png",
+        "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/screenshots/xray_ultimate/2.png",
+        "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/screenshots/xray_ultimate/3.png",
+        "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/screenshots/xray_ultimate/4.png",
+        "https://raw.githubusercontent.com/KutsalAres/AresForge-Data/refs/heads/main/screenshots/xray_ultimate/5.png"
+      ],
+      "screenshotsOrientation": "horizontal"
     }
   ]
 }
