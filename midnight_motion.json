@@ -1,1 +1,47 @@
-
+{
+  "data": {
+    "feed": {
+      "cards": [
+        {
+          "id": "premium_1",
+          "layout": "default",
+          "title": "Premium Paket",
+          "subtitle": "Tüm özelliklere sınırsız erişim",
+          "description": "Reklamsız deneyim, tüm efektler ve projeler",
+          "imageUrl": "https://i.imgur.com/example_premium.jpg",
+          "actions": [
+            {
+              "id": "buy_monthly",
+              "type": "purchase",
+              "target": "com.alight.premium.monthly",
+              "label": "Aylık 29.99 TL"
+            },
+            {
+              "id": "buy_yearly",
+              "type": "purchase",
+              "target": "com.alight.premium.yearly",
+              "label": "Yıllık 99.99 TL"
+            }
+          ]
+        },
+        {
+          "id": "template_2",
+          "layout": "default",
+          "title": "Yeni Template Paketi",
+          "subtitle": "50+ hazır şablon",
+          "description": "Sosyal medya için profesyonel şablonlar",
+          "imageUrl": "https://i.imgur.com/example_templates.jpg",
+          "actions": [
+            {
+              "id": "buy_templates",
+              "type": "purchase",
+              "target": "com.alight.templates",
+              "label": "Şimdi Al"
+            }
+          ]
+        }
+      ]
+    },
+    "feedHash": "abc123xyz"
+  }
+}
